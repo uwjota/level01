@@ -1,0 +1,58 @@
+{
+  "name": "central-pessoal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:supabase": "node --env-file-if-exists=.env.local scripts/verify-supabase.mjs",
+    "format": "prettier --write src tests scripts docs README.md *.json *.mts *.ts *.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@hookform/resolvers": "7.0.2",
+    "@radix-ui/react-dialog": "1.3.1",
+    "@radix-ui/react-dropdown-menu": "2.2.1",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.119.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "date-fns": "4.4.0",
+    "date-fns-tz": "3.2.0",
+    "fast-xml-parser": "5.12.0",
+    "lucide-react": "1.68.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-hook-form": "7.91.0",
+    "react-markdown": "10.1.0",
+    "recharts": "3.10.1",
+    "remark-gfm": "4.0.1",
+    "tailwind-merge": "3.7.0",
+    "web-push": "3.6.7",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.15",
+    "@tailwindcss/postcss": "4.3.4",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/web-push": "3.6.4",
+    "esbuild": "0.28.2",
+    "jsdom": "30.1.3",
+    "prettier": "3.9.10",
+    "supabase": "3.0.0",
+    "tailwindcss": "4.3.4",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
